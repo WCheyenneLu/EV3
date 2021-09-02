@@ -2,24 +2,76 @@
 <html>
 <head>
 <link href = "./Resources/style.css" rel = "stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Luckiest+Guy&family=Press+Start+2P&family=Sigmar+One&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <h2>Ev3</h2>
-    </nav>
+    <nav class="nav" id ="navbar">
+		<div class="logo">
+			<a href="#" title="EV3 Logo"><img src="./Resources/Logo.png" alt="EV3"></a>
+		</div>
+		<div class="nav-links" id="navLinks">
+			<i class="fa fa-times" onclick="hideMenu()"></i>
+			<ul>
+				<li><a href="#">Builds</a></li>
+				<li><a href="#">Codes</a></li>
+				<li><a href="#">Puzzles</a></li>
+			</ul>
+		</div>
+		<i class="fa fa-bars" onclick="showMenu()"></i>
+	</nav>
     <header class = "header-container">
         <div class = "header-strip"></div>
         <div class = "header-content">
-            <div id = "header-robot">
-                <img src ="./Robot.PNG">
+            <div class = "header-robot">
+                <img id = "welcome-png"src = "./Resources/Welcome.png">
+                <img id = "robot-png" src ="./Resources/Robot.PNG">
             </div>
-            <div id = "header-text"></div>
+            <div id = "header-text">
+                <h1>Learn EV3!</h1>
+                <h3>Sample text</h3>
+            </div>
         </div>
         <img src = "./Resources/Banner.png">
     </header>
     <div class = "header-main-strip"></div>
     <main>
-        <div class="square"></div>
+        <div class="main">
+            <section>
+                <div class = "home-main-image"></div>
+                <div class = "home-main-text"></div>
+            </section>
+            <div class = "pipe-strip">
+                <img src = "./Resources/Pipe.png">
+            </div>
+            <section>
+                <div class = "home-main-image" id = "home-code-text"></div>
+                <div class = "home-main-text" id = "home-code-image"></div>
+            </section>
+            <div class = "pipe-strip">
+                <img src = "./Resources/Pipe2.png">
+            </div>
+            <section>
+                <div class = "home-main-image"></div>
+                <div class = "home-main-text"></div>
+            </section>
+        </div>
     </main>
+    <footer>
+
+    </footer>
+    <script>
+        var prevScrollpos = window.pageYOffset;
+		window.onscroll = function() {
+			var currentScrollPos = window.pageYOffset;
+  		if (prevScrollpos > currentScrollPos) {
+    		document.getElementById("navbar").style.top = "0";
+  		} else {
+  	  	document.getElementById("navbar").style.top = "-60px";
+	  	}
+  			prevScrollpos = currentScrollPos;
+			}
+    </script>
 </body>
 </html> 
