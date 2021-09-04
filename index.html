@@ -5,6 +5,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Luckiest+Guy&family=Press+Start+2P&family=Sigmar+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="nav" id ="navbar">
@@ -14,9 +15,9 @@
 		<div class="nav-links" id="navLinks">
 			<i class="fa fa-times" onclick="hideMenu()"></i>
 			<ul>
-				<li><a href="#">Builds</a></li>
-				<li><a href="#">Codes</a></li>
-				<li><a href="#">Puzzles</a></li>
+				<b><li><a href="#">Builds</a></li></b>
+				<b><li><a href="#">Codes</a></li></b>
+				<b><li><a href="#">Puzzles</a></li></b>
 			</ul>
 		</div>
 		<i class="fa fa-bars" onclick="showMenu()"></i>
@@ -39,22 +40,41 @@
     <main>
         <div class="main">
             <section>
-                <div class = "home-main-image"></div>
-                <div class = "home-main-text"></div>
+                <div class = "home-main-col1">
+                    <img src ="./Resources/build.png">
+                </div>
+                <div class = "home-main-col2">
+                    <h2>Build.</h2>
+                    <p>This space is used to describe the 'build' tab/ page 
+                        and what it is about and this is some sample text. Please
+                        replace this with an intresting summary.</p>
+                </div>
             </section>
             <div class = "pipe-strip">
                 <img src = "./Resources/Pipe.png">
             </div>
-            <section>
-                <div class = "home-main-image" id = "home-code-text"></div>
-                <div class = "home-main-text" id = "home-code-image"></div>
+            <section id = "code">
+                <div class = "home-main-col1">
+                    <h2>Code.</h2>
+                    <br>
+                    <p>This space is used to describe the 'code' tab/page
+                        and what it is about and this is some sample text. Please
+                        replace this with an intresting summary.</p>
+                </div>
+                <div class = "home-main-col2"></div>
             </section>
             <div class = "pipe-strip">
                 <img src = "./Resources/Pipe2.png">
             </div>
-            <section>
-                <div class = "home-main-image"></div>
-                <div class = "home-main-text"></div>
+            <section id = "solve">
+                <div class = "home-main-col1"></div>
+                <div class = "home-main-col2">
+                    <h2>Solve.</h2>
+                    <br>
+                    <p>This space is used to describe the 'solve' tab/page
+                        and what it is about and this is some sample text. Please
+                        replace this with an intresting summary.</p>
+                </div>
             </section>
         </div>
     </main>
@@ -68,7 +88,7 @@
   		if (prevScrollpos > currentScrollPos) {
     		document.getElementById("navbar").style.top = "0";
   		} else {
-  	  	document.getElementById("navbar").style.top = "-60px";
+  	  	document.getElementById("navbar").style.top = "-64px";
 	  	}
   			prevScrollpos = currentScrollPos;
 			}

@@ -3,11 +3,7 @@
     margin: 0;
     box-sizing:border-box;
     font-family:Arial, Helvetica, sans-serif;
-}
-h2{
-    font-size: 43px;
-    text-align: left;
-    margin: 3px;
+    /*border:red solid 1px;*/
 }
 .nav{
     display:flex;
@@ -43,7 +39,7 @@ h2{
     margin-left:20px;
   }
   .nav-links ul{
-    transform:translateX(90px);
+    transform:translateX(21%);
     margin:0;
     padding:0;
     display:inline-flex;
@@ -56,27 +52,29 @@ h2{
     text-decoration: none;
     padding: 15px 60px;
     display: block;
-    color:black;
+    color:#293241;
     letter-spacing: 1px;
     text-transform:uppercase;
     font-size:20px;
+    font-family: 'Bowlby One';
   }
   .nav-links ul li::after{
     content:'';
     width:0%;
     height:2px;
-    background:#1d1711;
+    background:rgb(238, 108, 77);
     display:block;
     margin: auto;
     transition:0.5s;
   }
   .nav-links ul li:hover::after{
-    width:85%;
+    width:75%;
   }
 .header-strip{
     width:100%;
-    height:30px;
+    height:100px;
     background-color:#7eb9db;
+    transform:translateY(-70%);
 }
 header.header-container{
     width:100%;
@@ -87,7 +85,6 @@ header.header-container{
 header .header-content{
     text-align: center;
     position: relative;
-    border:red solid 1px;
     width: 90%;
     height:360px;
     margin: 0 auto;
@@ -102,7 +99,7 @@ header .header-content{
     width:45%;
     height:90%;
     opacity:1;
-    transform: translateX(-10px);
+    transform: translateX(-5%);
     background-color:transparent;
     justify-content:flex-start;
 }
@@ -110,24 +107,25 @@ header .header-content{
     position: static;
     height: 70%;
     width:60%;
-    border:red solid 1px;
     display:inline-block;
     margin: auto 0;
     text-align:left;
-    padding: 10px 0px;
+    transform:translateY(-30%);
+    white-space:nowrap;
 }
 #header-text h1{
-    font-size: 70px;
+    font-size: 90px;
     color: #293241;
     font-weight:800;
-    font-family:'Bowlby One';
-    letter-spacing:5px;
+    font-family:'Luckiest Guy';
+    letter-spacing:7px;
     padding-top:30px;
     padding-left:30px;
     width:80%;
 }
 #header-text h3{
-    font-size: 30px;
+    font-size: 20px;
+    font-family: 'Roboto Mono', monospace;
     color: #293241;
     width:80%;
     padding:10px 0 30px 30px;
@@ -141,27 +139,26 @@ header img{
     background-color:#d9d9d9;
 }
 #welcome-png{
-    width:210px;
-    height:110px;
+    width:40%;
+    height:35%;
     top:0;
-    margin: 20px 0px 230px 20px;
     display:inline-block;
     position: static;
     background-color:transparent;
-    transform: rotate(-10deg) translateX(40px);
+    transform: rotate(-13deg) translateX(45%) translateY(-260%);
 }
 #robot-png{
     width:40%;
-    height:100%;
+    height:110%;
     display:inline-block;
     top:0;
     position:static;
     background-color:transparent;
-    transform:translateY(-30px) translateX(-10px);
+    transform:translateX(-10px) translateY(-20%);
 }
 .header-main-strip{
     width:100%;
-    height:280px;
+    height:210px;
     background-color: black;
     position:relative;
     z-index:-1;
@@ -179,53 +176,101 @@ main .main {
 }
 main section{
     width:95%;
-    margin:0 auto;
-    height:370px;
-    border:red 1px solid;
+    margin:auto;
+    height:25%;
     position:static;
-    justify-content:space-around;
-    padding:10px 30px;
+    padding:2.7% 5%;
 }
-.home-main-image{
-    width:49%;
-    padding:20px;
-    height:100%;
-    background-color:rgba(238, 108, 77,0.7);
+.home-main-col1{
+    width:50%;
+    height:120%;
+    background-color:rgba(238, 108, 77,0.9);
+    border-radius:40px;
     display:inline-block;
-    margin:0 auto;
+    margin:0;
+    border: #293241 solid 15px;
+    transform:translateY(-10%);
 }
-.home-main-text{
-    width:49%;
-    padding: 20px;
+.home-main-col2{
+    width:45%;
     height:100%;
-    border:red solid 1px;
     display:inline-block;
-    margin: 0 auto;
+    text-align: left;
+    transform:translateY(-35%) translateX(13%);
+}
+h2{
+    font-size:85px;
+    text-align:left;
+    display:inline-block;
+    font-family:'Luckiest Guy';
+    letter-spacing:5px;
+    color:#293241;
+    font-weight:normal;
+}
+p{
+    font-family:'Roboto', monospace;
+    font-size:20px;
+    line-height:1.5;
+    margin-top: 5px;
+    font-weight:600;
+}
+#code h2{
+    letter-spacing:4px;
+}
+#code{
+    padding:0 5%;
+}
+#code .home-main-col2{
+    position:relative;
+    top:0;
+    width:50%;
+    height:100%;
+    background-color:rgba(238, 108, 77,0.9);
+    border-radius:40px;
+    display:inline-block;
+    transform:translateX(110%) translateY(-122.8%);
+    border: #293241 solid 15px;
+}
+#code .home-main-col1{
+    background-color:transparent;
+    border-radius:0px;
+    text-align:right;
+    border:transparent;
+    transform:translateY(10%);
+    font-size:83px;
+}
+#solve .home-main-col1{
+    transform: translateX(-1%) translateY(-12.5%);
+}
+#solve .home-main-col2{
+    transform:translateY(-48%) translateX(13%);
+}
+.home-main-col1 img{
+    position:relative;
+    margin:auto;
+    width:80%;
+    height:95%;
+    transform:translateX(10%) translateY(3%);
 }
 .pipe-strip{
     position: relative;
     width:100%;
-    height:130px;
+    height:7%;
     background-color:#d9d9d9;
+    top:0%;
 }
 .pipe-strip img{
     position: relative;
     top:0;
     z-index:0;
     width:30%;
-    transform:translateX(115%) translateY(-7%);
-    height:152px;
+    transform:translateX(125%) translateY(-10%);
+    height:100%;
 }
-#home-code-image{
-    background-color:rgba(238, 108, 77,0.7);
-}
-#home-code-text{
-    background-color:transparent;
-    border:red solid 1px;
-}
+
 footer{
     width:100%;
-    height:300px;
+    height:200px;
     background-color:black;
     position: static;
 }
