@@ -4,4 +4,4 @@
 ## Builds Page Screenshot:
 ![Screenshot of Index Page](./Resources/EV3_builds.html.png)
 ## Codes Page Screenshot:
-![Screenshot of Index Page](./Resources/EV3_codes.html.png)
+![Screenshot of Index Page](./Resources/EV3_code.html.png)
